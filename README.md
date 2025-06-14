@@ -13,18 +13,7 @@ When developing or installing MCP plugins, you need to restart Claude to load ne
 
 ## Installation
 
-```bash
-npm install -g @199-biotechnologies/mcp-autostarter
-```
-
-Or clone and build locally:
-
-```bash
-git clone https://github.com/199-biotechnologies/mcp-autostarter.git
-cd mcp-autostarter
-npm install
-npm run build
-```
+The easiest way is to let Claude Desktop install it automatically via npx. Just add it to your configuration!
 
 ## Configuration
 
@@ -34,13 +23,15 @@ Add to your Claude Desktop MCP settings:
 {
   "mcpServers": {
     "autostarter": {
-      "command": "node",
-      "args": ["/path/to/mcp-autostarter/dist/index.js"],
+      "command": "npx",
+      "args": ["-y", "mcp-autostarter"],
       "env": {}
     }
   }
 }
 ```
+
+That's it! No manual installation needed - npx will handle everything automatically.
 
 ## Usage
 
