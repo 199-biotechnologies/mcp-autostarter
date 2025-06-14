@@ -1,0 +1,38 @@
+{
+  "name": "@199-biotechnologies/mcp-autostarter",
+  "version": "1.0.0",
+  "description": "MCP server that intelligently restarts Claude's MCP handler process without disrupting the UI",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "restart",
+    "process-management"
+  ],
+  "author": "199 Biotechnologies",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "ps-list": "^8.1.1",
+    "tree-kill": "^1.2.2",
+    "find-process": "^1.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
