@@ -2,6 +2,10 @@
 
 An intelligent MCP server that restarts Claude's MCP handler process without disrupting the UI. Unlike traditional restart tools that kill the entire Claude Desktop application, this tool surgically restarts only the Node.js process handling MCP connections, allowing for seamless plugin reloading.
 
+<a href="https://glama.ai/mcp/servers/@199-biotechnologies/mcp-autostarter">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@199-biotechnologies/mcp-autostarter/badge" alt="Autostarter MCP server" />
+</a>
+
 ## Why MCP Autostarter?
 
 When developing or installing MCP plugins, you need to restart Claude to load new configurations. Traditional approaches kill the entire Claude Desktop app, disrupting your workflow. MCP Autostarter is smarter - it:
