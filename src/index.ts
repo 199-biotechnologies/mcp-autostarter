@@ -66,7 +66,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   switch (request.params.name) {
     case 'restart_mcp': {
       try {
-        console.log('Restarting MCP handler process...');
+        console.error('Restarting MCP handler process...');
         const result = await processManager.restartMCPHandler();
         
         return {
@@ -87,7 +87,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
     case 'restart_claude': {
       try {
-        console.log('Restarting Claude Desktop...');
+        console.error('Restarting Claude Desktop...');
         const result = await processManager.restartClaudeDesktop();
         
         return {

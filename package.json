@@ -1,6 +1,6 @@
 {
   "name": "mcp-autostarter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server that intelligently restarts Claude's MCP handler process without disrupting the UI",
   "main": "dist/index.js",
   "type": "module",
